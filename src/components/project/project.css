@@ -2,11 +2,13 @@ h3,
 p {
   font-family: "Alegreya Sans";
 }
+
 .project-list-root {
-  width: 100%;
-  height: calc(100vh - 200px);
-  margin-top: 30px;
+  width: 90%;
+  height: 100vh;
+  margin: 30px auto !important;
   overflow-y: auto;
+  padding-bottom: 150px !important;
 }
 
 .project-list {
@@ -70,9 +72,8 @@ p {
 
 .project-item {
   width: 40vw;
-  /* opacity: 0; */
-  -webkit-animation: fade-in-bottom 1s ease-in-out 1s forwards;
-  animation: fade-in-bottom 1s ease-in-out 1s forwards;
+  -webkit-animation: fade-in-bottom 0.3s ease-in-out;
+  animation: fade-in-bottom 0.3s ease-in-out;
 }
 
 .project-item .project-desc {
@@ -146,5 +147,46 @@ p {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width:801px) and (max-width:1000px) {
+  .project-col {
+    width: 100% !important;
+  }
+
+  .project-item,
+  .project-item img {
+    width: 60vw;
+  }
+}
+
+@media (min-width:751px) and (max-width:800px) {
+  .project-col {
+    width: 100% !important;
+  }
+  
+  .project-item,
+  .project-item img {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  ul.home-nav {
+    display: block;
+  }
+
+  ul.home-nav li{
+    padding: 5px 20px;
+  }
+
+  .project-item,
+  .project-item img {
+    width: 80vw;
+  }
+
+  .project-desc {
+    font-size: 10px;   
   }
 }

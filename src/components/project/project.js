@@ -20,13 +20,12 @@ class Project extends Component {
       </Grid.Column>
     );
     return (
-      <div className="project-list-root">
-        <Grid centered className="center-grid">
-          <Grid.Row columns={2}>
-            {projectList}
-          </Grid.Row>
-        </Grid>
-      </div>
+      <Grid
+        centered 
+        columns={2} stackable 
+        className="project-list-root">
+          {projectList}
+      </Grid>
     );
   }
 }
