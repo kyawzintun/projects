@@ -10,7 +10,7 @@ const Routes = (props) => (
       <Route exact path='/projects/fullstack' component={FullStack} />
       <Route exact path='/projects/frontend' component={Frontend} />
       <Route exact path='/projects/visualization' component={DataVisualization} />
-      {/* <Route component={FullStack} /> */}
+      <Route component={FullStack} />
     </Switch>
   </BrowserRouter>
 );
