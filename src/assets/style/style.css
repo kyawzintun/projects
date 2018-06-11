@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+#root,
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  color: #555;
+  overflow: hidden;
+}
