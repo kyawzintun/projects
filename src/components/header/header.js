@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import './header.css';
 
 class Header extends Component {
@@ -12,13 +12,22 @@ class Header extends Component {
         <h1 className="title text-bold">Kyaw Zin Tun's Projects</h1>
         <ul className="home-nav text-normal">
           <li className={this.checkUrlAndAddClass('fullstack')}>
-            <a href="/projects/fullstack">~ Fullstack projects</a>
+            {/* <a href="/projects/fullstack">~ Fullstack projects</a> */}
+            <Link to={{pathname: '/projects/fullstack'}}>
+              ~ Fullstack projects
+            </Link>
           </li>
           <li className={this.checkUrlAndAddClass('frontend')}>
-            <a href="/projects/frontend">~ Frontend projects</a>
+            {/* <a href="/projects/frontend">~ Frontend projects</a> */}
+            <Link to={{pathname: '/projects/frontend'}}>
+              ~Frontend projects
+            </Link>
           </li>
           <li className={this.checkUrlAndAddClass('visualization')}>
-            <a href="/projects/visualization">~ Data visualization projects</a>
+            {/* <a href="/projects/visualization">~ Data visualization projects</a> */}
+            <Link to={{pathname: '/projects/visualization'}}>
+              ~Data visualization projects
+            </Link>
           </li>
         </ul>
       </div>
