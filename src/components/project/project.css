@@ -5,7 +5,7 @@ p {
 
 .project-list-root {
   width: 90%;
-  height: 100vh;
+  height: inherit;
   margin: 30px auto !important;
   overflow-y: auto;
   padding-bottom: 150px !important;
@@ -165,7 +165,7 @@ p {
   .project-col {
     width: 100% !important;
   }
-  
+
   .project-item,
   .project-item img {
     width: 60vw;

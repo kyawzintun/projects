@@ -12,3 +12,12 @@
   color: #555;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000 !important;
+}
