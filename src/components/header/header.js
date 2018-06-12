@@ -9,22 +9,21 @@ class Header extends Component {
   render() {
     return (
       <div className="section">
-        <h1 className="title text-bold">Kyaw Zin Tun's Projects</h1>
+        <a href="https://kyawzintun.github.io/">
+          <h1 className="title text-bold">Kyaw Zin Tun's Projects</h1>
+        </a>
         <ul className="home-nav text-normal">
           <li className={this.checkUrlAndAddClass('fullstack')}>
-            {/* <a href="/projects/fullstack">~ Fullstack projects</a> */}
             <Link to={{pathname: '/projects/fullstack'}}>
               ~ Fullstack projects
             </Link>
           </li>
           <li className={this.checkUrlAndAddClass('frontend')}>
-            {/* <a href="/projects/frontend">~ Frontend projects</a> */}
             <Link to={{pathname: '/projects/frontend'}}>
               ~Frontend projects
             </Link>
           </li>
           <li className={this.checkUrlAndAddClass('visualization')}>
-            {/* <a href="/projects/visualization">~ Data visualization projects</a> */}
             <Link to={{pathname: '/projects/visualization'}}>
               ~Data visualization projects
             </Link>
