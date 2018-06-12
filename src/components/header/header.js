@@ -14,17 +14,17 @@ class Header extends Component {
         </a>
         <ul className="home-nav text-normal">
           <li className={this.checkUrlAndAddClass('fullstack')}>
-            <Link to={{pathname: '/fullstack'}}>
+            <Link to='/fullstack'>
               ~ Fullstack projects
             </Link>
           </li>
           <li className={this.checkUrlAndAddClass('frontend')}>
-            <Link to={{pathname: '/frontend'}}>
+            <Link to='/frontend'>
               ~Frontend projects
             </Link>
           </li>
           <li className={this.checkUrlAndAddClass('visualization')}>
-            <Link to={{pathname: '/visualization'}}>
+            <Link to='/visualization'>
               ~Data visualization projects
             </Link>
           </li>
